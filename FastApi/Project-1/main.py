@@ -1,17 +1,12 @@
 from fastapi import FastAPI
-from src.web import explorer
+from src.web import explorer, creature
+import uvicorn
 
 
 app = FastAPI()
 app.include_router(explorer.router)
-
-
-@app.get("/echo/{thing}")
-def echo(thing):
-    return f"echoing {thing}..."
-
+app.include_router(creature.router)
 
 
 if __name__ == "__main__":
-    import uvicorn
     uvicorn.run("main:app", reload=True)

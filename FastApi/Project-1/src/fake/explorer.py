@@ -29,6 +29,6 @@ def replace(explorer: Explorer) -> Explorer:
     """ Replace Explorer"""
     return explorer
 
-def delete(explorer: Explorer) -> bool | None:
+def delete(name: str) -> bool | None:
     """ Delete Explorer"""
     return None
