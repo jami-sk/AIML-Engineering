@@ -49,8 +49,8 @@ def test_encoder(data):
     json_out = json.dumps(out)
     assert json_out
 
-from model.tag import Tag, TagIn, TagOut
-import service.tag as service
+from FastApi.Basics.model.tag import Tag, TagIn, TagOut
+import FastApi.Basics.service.tag as service
 
 @app.post("/")
 def create(tag_in:TagIn) -> TagIn:
