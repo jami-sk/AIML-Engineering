@@ -28,6 +28,6 @@ def replace(creature: Creature) -> Creature:
     """ Replace creature"""
     return creature
 
-def delete(creature: Creature) -> bool | None:
+def delete(name: str) -> bool | None:
     """ Delete creature"""
     return None
