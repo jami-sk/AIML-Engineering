@@ -1,4 +1,4 @@
-from model.explorer import Explorer
+from src.model.explorer import Explorer
 
 # fake data will be replaced
 _explorers = [

@@ -1,5 +1,5 @@
-from data import conn, curs
-from model.explorer import Explorer
+from src.data import conn, curs
+from src.model.explorer import Explorer
 from typing import Optional
 
 curs.execute("""CREATE TABLE if not exists explorer(

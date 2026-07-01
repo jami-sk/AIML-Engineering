@@ -1,5 +1,5 @@
-from data import conn, curs
-from model.creature import Creature
+from src.data import conn, curs
+from src.model.creature import Creature
 from typing import Optional
 
 curs.execute("""CREATE TABLE if not exists creature(

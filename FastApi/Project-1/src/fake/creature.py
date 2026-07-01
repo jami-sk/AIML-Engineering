@@ -1,4 +1,4 @@
-from model.creature import Creature
+from src.model.creature import Creature
 
 # fake data will be replaced
 _creatures = [
