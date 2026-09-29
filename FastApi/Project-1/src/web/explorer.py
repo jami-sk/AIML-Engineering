@@ -1,6 +1,6 @@
-from fastapi import APIRouter, HTTPException
-from model.explorer import Explorer
-import fake.explorer as service
+from fastapi import APIRouter
+from src.model.explorer import Explorer
+import src.data.explorer as service
 from typing import Optional
 from error import Missing, Duplicate
 
