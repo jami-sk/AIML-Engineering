@@ -1,6 +1,11 @@
 from src.model.creature import Creature
 import src.data.creature as data
 
+if os.getenv("CRYPTID_UNIT_TEST"):
+    from fake import creature as data
+else:
+    from data import creature as data
+
 def get_all() -> list[Creature]:
     return data.get_all()
 
